@@ -1,0 +1,39 @@
+{
+  "name": "env-doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.11",
+    "gitbook-plugin-edit-link": "^2.0.2",
+    "gitbook-plugin-expandable-chapters-small": "^0.1.7",
+    "gitbook-plugin-force-http": "0.0.4",
+    "gitbook-plugin-search-plus": "^1.0.3",
+    "gitbook-plugin-splitter": "0.0.8"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2",
+    "gulp": "3.6.x",
+    "gulp-gh-pages": "^0.5.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "gitbook install",
+    "start": "gitbook serve .",
+    "deploy": "gulp deploy",
+    "build": "gitbook install && gitbook build . "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddupg/env-doc.git"
+  },
+  "keywords": [
+    "gitbook"
+  ],
+  "author": "ddupg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddupg/env-doc/issues"
+  },
+  "homepage": "https://github.com/ddupg/env-doc#readme"
+}
