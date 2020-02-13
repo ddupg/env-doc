@@ -1,12 +1,14 @@
-var gulp = require("gulp"),
-  deploy = require("gulp-gh-pages");
+const gulp = require('gulp');
+const gulpLoadPlugins = require('gulp-load-plugins');
 
-gulp.task('deploy', function () {
-  gulp.src("_book/**/*.*")
-    .pipe(deploy({
-      remoteUrl: "https://github.com/ddupg/env-doc"
-    }))
-    .on("error", function(err){
-      console.log(err)
-    })
+const $ = gulpLoadPlugins();
+
+// Publishes the site to GitHub Pages
+gulp.task('deploy', () => {
+  console.log('Publishing to GH Pages');
+  return gulp.src('./_book/**/*')
+    .pipe($.ghPages({
+      origin: 'origin',
+      branch: 'gh-pages'
+    }));
 });
