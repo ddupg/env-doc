@@ -6,4 +6,7 @@
 * [机器环境](machine/README.md)
     * [黑苹果双系统](machine/hackintosh.md)
 * [MacOS](macos/README.md)
+* [框架](framework/README.md)
+    * [PowerMock](framework/powermock.md)
+    * [Netty](framework/netty.md)
 * [本站部署](this/README.md)
