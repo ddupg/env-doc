@@ -1,4 +1,6 @@
-### Linux终端显示git分支
+### .bashrc配置
+
+#### Linux终端显示git分支
 
 ```
 function git_branch {
