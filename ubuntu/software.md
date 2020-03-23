@@ -13,3 +13,11 @@ sudo dpkg -i xxxx.deb #安装
 ```
 
 注意，用alien转换的deb包并不能保证100%顺利安装，所以可以找到deb最好直接用deb
+
+### Ubuntu磁盘分区
+
+```
+sudo apt-get install gparted
+sudo gparted
+```
+前面有小钥匙图标的不能调整，要先Unmount或者Swapoff才行。但根目录所在分区不能Unmount，也就是不能压缩只能扩容。
