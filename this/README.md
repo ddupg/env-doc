@@ -2,6 +2,8 @@
 
 本站采用Gitbook编写，部署于GitHub Pages
 
+部署依赖node环境，node安装参考[Node](../dev-env/node.md)
+
 部署过程参考[Publishing GitBook to Github Pages](https://galdin.dev/blog/publishing-gitbook-to-github-pages/)
 
 ## 部署问题解决办法
