@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>黑苹果 · GitBook</title>
+        <title>bashrc配置文件 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../ubuntu/" />
+    <link rel="next" href="vim.html" />
     
     
     <link rel="prev" href="./" />
@@ -179,9 +179,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../macos/">
             
-                <a href="./">
+                <a href="../macos/">
             
                     
                     MacOS
@@ -193,9 +193,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.4.1" data-path="hackintosh.html">
+        <li class="chapter " data-level="1.4.1" data-path="../macos/hackintosh.html">
             
-                <a href="hackintosh.html">
+                <a href="../macos/hackintosh.html">
             
                     
                     黑苹果
@@ -269,9 +269,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="../shell/">
+        <li class="chapter " data-level="1.7" data-path="./">
             
-                <a href="../shell/">
+                <a href="./">
             
                     
                     Shell
@@ -283,9 +283,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1" data-path="../shell/bashrc.html">
+        <li class="chapter active" data-level="1.7.1" data-path="bashrc.html">
             
-                <a href="../shell/bashrc.html">
+                <a href="bashrc.html">
             
                     
                     bashrc配置文件
@@ -296,9 +296,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.2" data-path="../shell/vim.html">
+        <li class="chapter " data-level="1.7.2" data-path="vim.html">
             
-                <a href="../shell/vim.html">
+                <a href="vim.html">
             
                     
                     vim
@@ -309,9 +309,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.3" data-path="../shell/tar.html">
+        <li class="chapter " data-level="1.7.3" data-path="tar.html">
             
-                <a href="../shell/tar.html">
+                <a href="tar.html">
             
                     
                     tar
@@ -322,9 +322,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.4" data-path="../shell/grep.html">
+        <li class="chapter " data-level="1.7.4" data-path="grep.html">
             
-                <a href="../shell/grep.html">
+                <a href="grep.html">
             
                     
                     grep
@@ -383,7 +383,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >黑苹果</a>
+        <a href=".." >bashrc配置文件</a>
     </h1>
 </div>
 
@@ -398,8 +398,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x9ED1;&#x82F9;&#x679C;&#x53CC;&#x7CFB;&#x7EDF;">&#x9ED1;&#x82F9;&#x679C;&#x53CC;&#x7CFB;&#x7EDF;</h2>
+                                <h3 id="bashrc&#x914D;&#x7F6E;">.bashrc&#x914D;&#x7F6E;</h3>
+<h4 id="linux&#x7EC8;&#x7AEF;&#x663E;&#x793A;git&#x5206;&#x652F;">Linux&#x7EC8;&#x7AEF;&#x663E;&#x793A;git&#x5206;&#x652F;</h4>
+<pre><code>function git_branch {
+  git branch 2&gt; /dev/null | sed -e &apos;/^[^*]/d&apos; -e &apos;s/* \(.*\)/ (\1)/&apos;
+}
 
+export PS1=&quot;\u@\h: \w [\t]\[\033[32m\]\$(git_branch)\[\033[00m\] $ &quot;
+</code></pre>
                                 
                                 </section>
                             
@@ -426,12 +432,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: MacOS">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Shell">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../ubuntu/" class="navigation navigation-next " aria-label="Next page: Ubuntu">
+                <a href="vim.html" class="navigation navigation-next " aria-label="Next page: vim">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -442,7 +448,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"黑苹果","level":"1.4.1","depth":2,"next":{"title":"Ubuntu","level":"1.5","depth":1,"path":"ubuntu/README.md","ref":"ubuntu/README.md","articles":[]},"previous":{"title":"MacOS","level":"1.4","depth":1,"path":"macos/README.md","ref":"macos/README.md","articles":[{"title":"黑苹果","level":"1.4.1","depth":2,"path":"macos/hackintosh.md","ref":"macos/hackintosh.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"macos/hackintosh.md","mtime":"2020-03-17T12:29:42.457Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-29T14:11:44.429Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"bashrc配置文件","level":"1.7.1","depth":2,"next":{"title":"vim","level":"1.7.2","depth":2,"path":"shell/vim.md","ref":"shell/vim.md","articles":[]},"previous":{"title":"Shell","level":"1.7","depth":1,"path":"shell/README.md","ref":"shell/README.md","articles":[{"title":"bashrc配置文件","level":"1.7.1","depth":2,"path":"shell/bashrc.md","ref":"shell/bashrc.md","articles":[]},{"title":"vim","level":"1.7.2","depth":2,"path":"shell/vim.md","ref":"shell/vim.md","articles":[]},{"title":"tar","level":"1.7.3","depth":2,"path":"shell/tar.md","ref":"shell/tar.md","articles":[]},{"title":"grep","level":"1.7.4","depth":2,"path":"shell/grep.md","ref":"shell/grep.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"shell/bashrc.md","mtime":"2020-03-29T14:02:47.988Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-29T14:11:44.429Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
